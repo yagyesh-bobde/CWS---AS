@@ -1,0 +1,103 @@
+:root {
+    --nav-li-color: red;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    background-color: #e5e5e5;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    /* padding: 0 50px; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* 2nd section of page - Best places */
+#allPlaces_section{
+    height: 85vh;
+}
+
+.card_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    border-radius: 15px;
+    object-fit: contain;
+    overflow: hidden;
+    position: relative;
+    height: 275px;
+    transition: 256ms;
+    width: 450px;   
+    box-shadow: 0 0 5px 5px gray;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.card img {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.card .card_content {
+    /* color: black;
+    font-size: 25px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 0 30px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.5)) ;
+    height: 100%;
+    z-index: 1;
+}
+.card_content p {
+    font-size: larger;
+}
+.card:hover{ 
+    transform: scale(1.03);
+}
+
+.card_a{
+    color: black;
+    text-decoration: none;
+}
+
+.card_footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+
+/*  */
+button {
+    margin: 50px !important;
+    width: 75px;
+    height: 75px;
+    font-size: x-large;
+    background-color: transparent;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 5px 1px gray;
+    transition: 556ms;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 7px 3px gray;
+}
+
+
+/*  */
